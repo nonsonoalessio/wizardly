@@ -7,7 +7,7 @@ sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
 sudo ln -s /var/lib/snapd/snap /snap
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo snap install hello-world
-sudo snap install spotify discord
+sudo snap install discord
 sudo flatpak install flathub org.telegram.desktop
 mkdir temp
 cd temp
@@ -20,3 +20,9 @@ sudo rm -rf temp
 sudo rm libreoffice*
 sudo snap install android-studio --classic
 sudo snap install flutter --classic
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sudo rm .zshrc
+curl https://github.com/nonsonoalessio/wizardly/blob/master/res/.zshrc
+curl https://github.com/nonsonoalessio/wizardly/blob/master/res/.p10k.zsh -o .p10k.zsh
