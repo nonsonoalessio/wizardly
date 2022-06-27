@@ -1,7 +1,6 @@
 sudo dnf upgrade -y
 sudo dnf install gh git tlp tlp-rdw snapd zsh python3-pip java-latest-openjdk.x86_64 java-11-openjdk.x86_64 -y
 sudo pip install virtualenv
-curl http://courses.missouristate.edu/kenvollmar/mars/MARS_4_5_Aug2014/Mars4_5.jar -o Mars4_5.jar
 sudo dnf remove power-profiles-daemon -y
 sudo systemctl enable tlp.service
 sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket

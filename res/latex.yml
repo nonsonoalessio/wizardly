@@ -1,0 +1,21 @@
+matches:
+  - trigger: ":vec"
+    replace: "\\vec{}"
+
+  - trigger: ":pvec"
+    replace: "$\\vec{}$"
+
+  - trigger: ":fra"
+    replace: "\\frac{}{}"
+
+  - trigger: ":fisii"
+    replace: "*Questo argomento è stato trattato in #fisicaII.*\n***\n"
+
+  - trigger: ":aff"
+    replace: "*Argomento di afferenza: [[]].*\n***\n"
+ 
+  - trigger: ":call"
+    replace: ">[!NOTE]"
+
+  - trigger: ":eps"
+    replace: "\\varepsilon_0"
