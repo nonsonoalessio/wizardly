@@ -9,7 +9,10 @@ matches:
     replace: "\\frac{}{}"
 
   - trigger: ":fisii"
-    replace: "*Questo argomento è stato trattato in #fisicaII.*\n***\n"
+    replace: "*Questo argomento è stato trattato in #fisicaII.*\n***\n"  
+  
+  - trigger: ":amii"
+    replace: "*Questo argomento è stato trattato in #analisiMatematicaII.*\n***\n"
 
   - trigger: ":aff"
     replace: "*Argomento di afferenza: [[]].*\n***\n"
